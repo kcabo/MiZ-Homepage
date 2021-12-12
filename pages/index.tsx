@@ -19,23 +19,22 @@ const Home: NextPage = () => {
             </Link>
             <nav className='items-center hidden pl-8 space-x-3 text-base md:flex md:ml-8 '>
               <a
-                href='#_'
+                href='#service'
                 className='mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900'
               >
                 特徴
               </a>
-              <a
-                href='#_'
-                className='mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900'
-              >
-                利用規約
-              </a>
+              <Link href='/terms'>
+                <a className='mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900'>
+                  利用規約
+                </a>
+              </Link>
             </nav>
           </div>
 
           <div className='ml-5 '>
             <a
-              href='#'
+              href='https://lin.ee/YR8jgpg'
               className='px-4 py-2.5 text-base font-medium leading-6 text-white whitespace-no-wrap rounded-md shadow-sm bg-sky-500 hover:bg-sky-500'
             >
               友だち追加
@@ -44,7 +43,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className='flex flex-col justify-center max-w-xl px-4 mx-auto pt-28 lg:pt-40 lg:flex-row md:px-8 lg:max-w-screen-xl'>
+      <div className='flex flex-col justify-center max-w-xl px-4 pt-24 mx-auto lg:pt-40 lg:flex-row md:px-8 lg:max-w-screen-xl'>
         <div className='mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 '>
           <div className='max-w-xl mb-6'>
             <h2 className='max-w-lg mb-6 text-4xl font-black leading-tight text-gray-900 sm:text-6xl sm:leading-tight'>
@@ -53,7 +52,7 @@ const Home: NextPage = () => {
               一瞬で <span className='inline-block text-sky-500'>画像化</span>
             </h2>
             <p className='text-base text-gray-700 md:text-lg'>
-              水泳のレース結果を入力すれば、自動でラップタイムや平均タイムを計算。さらには折れ線グラフまで描きます。世界に一つだけ、あなただけのクールな記録証を生成します。
+              水泳のレース結果を入力すれば、自動でラップタイムを計算。さらには折れ線グラフまで描きます。データは自動で保存されるので、いつでも結果を振り返れます。
             </p>
           </div>
           <div className='flex items-center'>
@@ -70,7 +69,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className='mb-16'>
+      <div className='mb-16' id='service'>
         <div className='bg-gray-100'>
           <div className='px-4 pt-16 pb-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20'>
             <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
@@ -108,7 +107,7 @@ const Home: NextPage = () => {
                 スマートに
               </h2>
               <p className='text-base text-gray-700 md:text-lg'>
-                レース結果を紙で管理していませんか？MiZならあらゆるレース結果を一枚の画像にまとめてくれます。入力したデータは自動で保存されるので、いつでもレース結果を振り返れます。
+                レース結果を紙で管理していませんか？MiZにチャット形式でレースタイムを入力すれば、素早く一枚の画像にまとめてくれます。全てスマホで完結するので、大会中のマネージャーの負担を軽減します。
               </p>
             </div>
           </div>
@@ -184,33 +183,34 @@ const Home: NextPage = () => {
         <div className='max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8'>
           <nav className='flex flex-wrap justify-center -mx-5 -my-2'>
             <div className='px-5 py-2'>
-              <a
-                href='#'
-                className='text-base leading-6 text-gray-500 hover:text-gray-900'
-              >
-                運営者情報
-              </a>
+              <Link href='/about'>
+                <a className='text-base leading-6 text-gray-500 hover:text-gray-900'>
+                  運営者情報
+                </a>
+              </Link>
             </div>
 
             <div className='px-5 py-2'>
               <a
-                href='#'
+                href='https://forms.gle/Sjsh5k1CUo8ziyA29'
                 className='text-base leading-6 text-gray-500 hover:text-gray-900'
               >
-                連絡先
+                お問い合わせ
               </a>
             </div>
             <div className='px-5 py-2'>
-              <a
-                href='#'
-                className='text-base leading-6 text-gray-500 hover:text-gray-900'
-              >
-                利用規約
-              </a>
+              <Link href='/terms'>
+                <a className='text-base leading-6 text-gray-500 hover:text-gray-900'>
+                  利用規約
+                </a>
+              </Link>
             </div>
           </nav>
           <div className='flex justify-center mt-8 space-x-6'>
-            <a href='#' className='text-gray-400 hover:text-gray-500'>
+            <a
+              href='https://twitter.com/swim_zero'
+              className='text-gray-400 hover:text-gray-500'
+            >
               <span className='sr-only'>Twitter</span>
               <svg
                 className='w-6 h-6'
@@ -221,7 +221,10 @@ const Home: NextPage = () => {
                 <path d='M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84'></path>
               </svg>
             </a>
-            <a href='#' className='text-gray-400 hover:text-gray-500'>
+            <a
+              href='https://github.com/kcabo'
+              className='text-gray-400 hover:text-gray-500'
+            >
               <span className='sr-only'>GitHub</span>
               <svg
                 className='w-6 h-6'

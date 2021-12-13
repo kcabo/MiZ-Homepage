@@ -7,7 +7,7 @@ export function Feature() {
         <div className='px-4 pt-16 pb-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20'>
           <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
             <div>
-              <p className='inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider uppercase rounded-full text-cyan-800 bg-cyan-300'>
+              <p className='inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider uppercase rounded-full text-cyan-800 bg-cyan-300'>
                 Service
               </p>
             </div>
@@ -46,7 +46,7 @@ export function Feature() {
         </div>
       </div>
       <div className='relative px-4 md:px-0'>
-        <div className='absolute inset-0 h-10 bg-slate-100 md:h-1/2' />
+        <div className='absolute inset-0 h-16 bg-slate-100 md:h-1/2' />
         <div className='container relative grid gap-3 mx-auto md:grid-cols-4'>
           <FeatureItem Icon={Lovely} caption='手軽に記録'>
             タイムをLINEで送るだけ。面倒な操作は必要ありません。

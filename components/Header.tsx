@@ -5,7 +5,7 @@ import logoImg from '../public/miz-logo-landscape.svg';
 
 export function Header() {
   return (
-    <div className='fixed z-10 w-full border-b border-gray-200 backdrop-blur-xl '>
+    <div className='sticky top-0 z-10 w-full mb-10 border-b border-gray-200 lg:mb-16 backdrop-blur-2xl'>
       <div className='container flex items-center justify-between px-5 py-2 mx-auto max-w-7xl'>
         <div className='flex '>
           <Link href='/'>

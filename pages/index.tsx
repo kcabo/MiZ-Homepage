@@ -4,6 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import mockImg from '../public/mock.png';
+import sheetsImg from '../public/sheets.png';
+import logoImg from '../public/miz-logo-landscape.svg';
+import addFriendsImg from '../public/friends-btn.png';
+import qrImg from '../public/qr.png';
+
 import { Feature } from '@/components/Feature';
 import { Layout } from '@/components/Layout';
 
@@ -36,11 +41,51 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className='mx-auto -mb-1.5 lg:w-80 xl:mr-24 sm:container lg:mx-10'>
-          <Image src={mockImg} className='object-cover object-bottom ' alt='' />
+          <Image
+            src={mockImg}
+            className='object-cover object-bottom '
+            alt='スマホで記録証'
+          />
         </div>
       </div>
 
       <Feature />
+
+      <div className='relative w-full h-96 md:h-[600px] '>
+        <Image
+          src={sheetsImg}
+          alt='カラフルな画像が生成されます'
+          layout='fill'
+          objectFit='cover'
+          quality={100}
+          className='opacity-60'
+        />
+        <div className='absolute flex items-center justify-center w-full h-full'>
+          <div className='w-2/3 max-w-2xl py-8 space-y-6 bg-white border-2 shadow-lg border-slate-100 rounded-2xl md:py-12'>
+            <div className='flex justify-center w-full '>
+              <Image src={logoImg} alt='MiZ' width={150} height={60} />
+            </div>
+            <div className='text-lg font-black text-center text-slate-800'>
+              水泳レース画像化 & <br className='block md:hidden' />
+              データ管理サービス
+            </div>
+            <a
+              href='https://lin.ee/YR8jgpg'
+              className='flex justify-center w-full'
+            >
+              <Image
+                src={addFriendsImg}
+                alt='友だち追加'
+                height={36}
+                width={116}
+              />
+            </a>
+            <div className='justify-center hidden w-full md:flex'>
+              <Image src={qrImg} alt='QRコード' width={150} height={150} />
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };

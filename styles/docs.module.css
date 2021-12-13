@@ -25,3 +25,7 @@
 .article ul {
   @apply list-disc list-inside;
 }
+
+.article a {
+  @apply text-blue-500;
+}

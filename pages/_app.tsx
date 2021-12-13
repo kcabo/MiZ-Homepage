@@ -7,8 +7,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>MiZ</title>
-        <meta property='og:title' content='MiZ' />
         <meta
           name='description'
           content='レース結果を一瞬で画像化するサービスです。ラップ計算ももちろん自動で'

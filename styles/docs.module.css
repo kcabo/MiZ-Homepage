@@ -1,0 +1,27 @@
+.article {
+  @apply leading-loose text-gray-900;
+}
+
+.article h1 {
+  @apply py-8 text-4xl font-bold text-gray-500;
+}
+
+.article h2 {
+  @apply pt-6 pb-2 text-xl font-bold text-gray-800;
+}
+
+.article p {
+  @apply py-2;
+}
+
+.article ol {
+  @apply list-decimal list-inside;
+}
+
+.article li li {
+  @apply pl-6;
+}
+
+.article ul {
+  @apply list-disc list-inside;
+}

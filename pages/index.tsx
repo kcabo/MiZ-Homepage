@@ -3,11 +3,11 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import mockImg from '../public/mock.png';
-import sheetsImg from '../public/sheets.png';
-import logoImg from '../public/miz-logo-landscape.svg';
-import addFriendsImg from '../public/friends-btn.png';
-import qrImg from '../public/qr.png';
+import mockImg from '@/public/mock.png';
+import sheetsImg from '@/public/sheets.png';
+import logoImg from '@/public/miz-logo-landscape.svg';
+import addFriendsImg from '@/public/friends-btn.png';
+import qrImg from '@/public/qr.png';
 
 import { Feature } from '@/components/Feature';
 import { Layout } from '@/components/Layout';

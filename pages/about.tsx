@@ -25,7 +25,7 @@ const Home: NextPage = () => {
             <div className='mb-2 text-xl font-bold text-gray-800'>
               MiZ開発チーム
             </div>
-            <p className='text-gray-400 w-72'>
+            <p className='mx-auto text-gray-500 w-72'>
               半フリのベストタイムは短水で26秒をやっと切れるくらい。そんな大学生が1名。
             </p>
           </div>

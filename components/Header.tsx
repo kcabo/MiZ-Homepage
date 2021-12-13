@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import logoImg from '../public/miz-logo-landscape.svg';
+import logoImg from '@/public/miz-logo-landscape.svg';
 
 export function Header() {
   return (

@@ -1,3 +1,5 @@
+import { Lovely, Icon, ShieldTick, Flashy, EmojiHappy } from 'iconsax-react';
+
 export function Feature() {
   return (
     <div className='mb-16' id='service'>
@@ -14,7 +16,7 @@ export function Feature() {
                 <svg
                   viewBox='0 0 52 24'
                   fill='currentColor'
-                  className='absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-gray-400 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block'
+                  className='absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-slate-300 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block'
                 >
                   <defs>
                     <pattern
@@ -38,74 +40,48 @@ export function Feature() {
               スマートに
             </h2>
             <p className='text-base text-gray-700 md:text-lg'>
-              レース結果を紙で管理していませんか？MiZにチャット形式でレースタイムを入力すれば、素早く一枚の画像にまとめてくれます。全てスマホで完結するので、大会中のマネージャーの負担を軽減します。
+              レース結果を紙で管理していませんか？MiZはレース結果を素早く一枚の画像にまとめてくれます。全てスマホで完結するので、大会中のマネージャーの負担を軽減します。
             </p>
           </div>
         </div>
       </div>
-      <div className='relative px-4 sm:px-0'>
-        <div className='absolute inset-0 bg-slate-100 h-1/2' />
-        <div className='relative grid mx-auto overflow-hidden bg-white divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md'>
-          <div className='inline-block p-8 text-center'>
-            <div className='flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-sky-50'>
-              <svg
-                className='w-10 h-10 text-sky-500'
-                stroke='currentColor'
-                viewBox='0 0 52 52'
-              >
-                <polygon
-                  strokeWidth='3'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  fill='none'
-                  points='29 13 14 29 25 29 23 39 38 23 27 23'
-                />
-              </svg>
-            </div>
-            <p className='font-bold tracking-wide text-gray-800'>手軽に記録</p>
-          </div>
-          <div className='inline-block p-8 text-center'>
-            <div className='flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-sky-50'>
-              <svg
-                className='w-10 h-10 text-sky-500'
-                stroke='currentColor'
-                viewBox='0 0 52 52'
-              >
-                <polygon
-                  strokeWidth='3'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  fill='none'
-                  points='29 13 14 29 25 29 23 39 38 23 27 23'
-                />
-              </svg>
-            </div>
-            <p className='font-bold tracking-wide text-gray-800'>
-              無料で使える
-            </p>
-          </div>
-          <div className='inline-block p-8 text-center'>
-            <div className='flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-sky-50'>
-              <svg
-                className='w-10 h-10 text-sky-500'
-                stroke='currentColor'
-                viewBox='0 0 52 52'
-              >
-                <polygon
-                  strokeWidth='3'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  fill='none'
-                  points='29 13 14 29 25 29 23 39 38 23 27 23'
-                />
-              </svg>
-            </div>
-            <p className='font-bold tracking-wide text-gray-800'>
-              パスワードいらず
-            </p>
-          </div>
+      <div className='relative px-4 md:px-0'>
+        <div className='absolute inset-0 h-10 bg-slate-100 md:h-1/2' />
+        <div className='container relative grid gap-3 mx-auto md:grid-cols-4'>
+          <FeatureItem Icon={Lovely} caption='手軽に記録'>
+            タイムをLINEで送るだけ。面倒な操作は必要ありません。
+          </FeatureItem>
+          <FeatureItem Icon={EmojiHappy} caption='無料で使える'>
+            もちろん無料です。好きなときに気軽に使ってください。
+          </FeatureItem>
+          <FeatureItem Icon={Flashy} caption='登録不要'>
+            メールアドレスやパスワードは不要です。LINEの友だち追加で利用開始。
+          </FeatureItem>
+          <FeatureItem Icon={ShieldTick} caption='安心のセキュリティ'>
+            セキュリティを第一に設計してあります。みなさんのデータを保護します。
+          </FeatureItem>
         </div>
       </div>
+    </div>
+  );
+}
+
+function FeatureItem({
+  Icon,
+  caption,
+  children,
+}: {
+  Icon: Icon;
+  caption: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className='p-8 space-y-2 bg-white border rounded-xl border-slate-200'>
+      <Icon size='36' color='#38bdf8' variant='Bulk' />
+      <h3 className='text-lg font-bold tracking-wide text-gray-800'>
+        {caption}
+      </h3>
+      <p className='text-gray-600'>{children}</p>
     </div>
   );
 }

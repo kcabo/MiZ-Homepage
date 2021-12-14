@@ -21,8 +21,9 @@ const Home: NextPage<{ html: string }> = ({ html }) => {
         <title>利用規約 | MiZ</title>
         <meta property='og:title' content='利用規約 | MiZ' />
       </Head>
-      <div className='container px-8 mx-auto'>
+      <div className='container px-8 mx-auto space-y-2'>
         <LinkButton path='/privacy' caption='プライバシーポリシー' />
+        <LinkButton path='/rules' caption='サービス利用のルール' />
         <div
           dangerouslySetInnerHTML={{ __html: html }}
           className={styles.article}

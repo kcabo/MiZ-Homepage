@@ -7,7 +7,7 @@ import { parseMarkdown } from '@/lib/mdParser';
 import styles from '@/styles/docs.module.css';
 
 export function getStaticProps() {
-  const html = parseMarkdown('docs/privacy.md');
+  const html = parseMarkdown('docs/rules.md');
 
   return {
     props: { html },
@@ -18,11 +18,11 @@ const Home: NextPage<{ html: string }> = ({ html }) => {
   return (
     <Layout>
       <Head>
-        <title>プライバシーポリシー | MiZ</title>
-        <meta property='og:title' content='プライバシーポリシー | MiZ' />
+        <title>サービス利用のルール | MiZ</title>
+        <meta property='og:title' content='サービス利用のルール | MiZ' />
       </Head>
       <div className='container px-8 mx-auto space-y-2'>
-        <LinkButton path='/rules' caption='サービス利用のルール' />
+        <LinkButton path='/privacy' caption='プライバシーポリシー' />
         <LinkButton path='/terms' caption='利用規約' />
         <div
           dangerouslySetInnerHTML={{ __html: html }}

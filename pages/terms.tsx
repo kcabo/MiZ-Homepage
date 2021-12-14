@@ -7,7 +7,7 @@ import { parseMarkdown } from '@/lib/mdParser';
 import styles from '@/styles/docs.module.css';
 
 export function getStaticProps() {
-  const html = parseMarkdown('docs/term.md');
+  const html = parseMarkdown('docs/terms.md');
 
   return {
     props: { html },

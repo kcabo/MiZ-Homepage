@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
 
 import mockImg from '@/public/mock.png';
@@ -16,8 +15,8 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>MiZ</title>
-        <meta property='og:title' content='MiZ' />
+        <title>MiZ | 水泳レース画像化サービス</title>
+        <meta property='og:title' content='MiZ | 水泳レース画像化サービス' />
       </Head>
       <div className='flex flex-col justify-center max-w-xl px-4 mx-auto md:px-8 lg:max-w-screen-xl lg:flex-row '>
         <div className='mb-16 lg:mb-0 lg:max-w-lg lg:pr-5 '>
@@ -28,13 +27,13 @@ const Home: NextPage = () => {
               一瞬で <span className='inline-block text-sky-500'>画像化</span>
             </h2>
             <p className='text-base text-gray-700 md:text-lg'>
-              水泳のレース結果を入力すれば、自動でラップタイムを計算。さらには折れ線グラフまで描きます。データは自動で保存されるので、いつでも結果を振り返れます。
+              水泳のレース結果を入力すれば、自動でラップタイムを計算。さらに折れ線グラフも描きます。データは自動で保存されるので、いつでも結果を振り返れます。
             </p>
           </div>
           <div className='flex items-center'>
             <a
               href='https://lin.ee/YR8jgpg'
-              className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-sky-500 hover:bg-sky-700 focus:shadow-outline focus:outline-none'
+              className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-lg bg-sky-500 hover:bg-sky-700'
             >
               LINEで今すぐはじめる
             </a>
@@ -44,7 +43,7 @@ const Home: NextPage = () => {
           <Image
             src={mockImg}
             className='object-cover object-bottom '
-            alt='スマホで記録証'
+            alt='200m自由形'
           />
         </div>
       </div>
@@ -78,6 +77,7 @@ const Home: NextPage = () => {
                 alt='友だち追加'
                 height={36}
                 width={116}
+                quality={100}
               />
             </a>
             <div className='justify-center hidden w-full md:flex'>

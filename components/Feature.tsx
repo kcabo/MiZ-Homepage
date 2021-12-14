@@ -46,19 +46,19 @@ export function Feature() {
         </div>
       </div>
       <div className='relative px-4 md:px-0'>
-        <div className='absolute inset-0 h-16 bg-slate-100 md:h-1/2' />
-        <div className='container relative grid gap-3 mx-auto md:grid-cols-4'>
+        <div className='absolute inset-0 h-16 bg-slate-100 md:h-1/4 lg:h-1/2' />
+        <div className='container relative grid gap-3 mx-auto md:grid-cols-2 lg:grid-cols-4'>
           <FeatureItem Icon={Lovely} caption='手軽に記録'>
             タイムをLINEで送るだけ。面倒な操作は必要ありません。
           </FeatureItem>
           <FeatureItem Icon={EmojiHappy} caption='無料で使える'>
-            もちろん無料です。好きなときに気軽に使ってください。
+            もちろん無料です。好きなときに気軽に使えます。
           </FeatureItem>
           <FeatureItem Icon={Flashy} caption='登録不要'>
-            メールアドレスやパスワードは不要です。LINEの友だち追加で利用開始。
+            メアドやパスワードは不要です。LINEで友達になるだけで始められます。
           </FeatureItem>
           <FeatureItem Icon={ShieldTick} caption='安心のセキュリティ'>
-            セキュリティを第一に設計してあります。みなさんのデータを保護します。
+            データがしっかり保護されるよう、セキュリティを第一に設計してあります。
           </FeatureItem>
         </div>
       </div>

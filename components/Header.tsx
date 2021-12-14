@@ -13,15 +13,20 @@ export function Header() {
               <Image src={logoImg} alt='MiZ' />
             </a>
           </Link>
-          <nav className='items-center hidden pl-8 space-x-3 text-base md:flex md:ml-8 '>
+          <nav className='items-center hidden pl-6 space-x-6 text-base md:flex md:ml-8 '>
             <a
               href='#service'
-              className='mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900'
+              className='font-medium leading-6 text-gray-600 hover:text-gray-900'
             >
               特徴
             </a>
+            <Link href='/about'>
+              <a className='font-medium leading-6 text-gray-600 hover:text-gray-900'>
+                運営者情報
+              </a>
+            </Link>
             <Link href='/terms'>
-              <a className='mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900'>
+              <a className='font-medium leading-6 text-gray-600 hover:text-gray-900'>
                 利用規約
               </a>
             </Link>
@@ -31,7 +36,7 @@ export function Header() {
         <div className='ml-5 '>
           <a
             href='https://lin.ee/YR8jgpg'
-            className='px-4 py-2.5 text-base font-medium leading-6 text-white whitespace-no-wrap rounded-md shadow-sm bg-sky-500 hover:bg-sky-500'
+            className='px-4 py-2.5 text-base font-medium leading-6 text-white whitespace-no-wrap rounded hover:shadow bg-sky-500 hover:shadow-sky-500/50'
           >
             友だち追加
           </a>

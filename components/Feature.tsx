@@ -2,13 +2,13 @@ import { Lovely, Icon, ShieldTick, Flashy, EmojiHappy } from 'iconsax-react';
 
 export function Feature() {
   return (
-    <div className='mb-20' id='service'>
+    <div className='mb-8' id='feature'>
       <div className='bg-slate-100'>
         <div className='px-4 pt-16 pb-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20'>
           <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
             <div>
               <p className='inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider uppercase rounded-full text-cyan-800 bg-cyan-300'>
-                Service
+                Feature
               </p>
             </div>
             <h2 className='max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto'>

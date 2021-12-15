@@ -15,7 +15,7 @@ export function Header() {
           </Link>
           <nav className='items-center hidden pl-6 space-x-6 text-base md:flex md:ml-8 '>
             <a
-              href='#service'
+              href='#feature'
               className='font-medium leading-6 text-gray-600 hover:text-gray-900'
             >
               特徴

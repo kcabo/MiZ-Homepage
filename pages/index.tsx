@@ -3,10 +3,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import mockImg from '@/public/mock.png';
-import sheetsImg from '@/public/sheets.png';
 import logoImg from '@/public/miz-logo-landscape.svg';
 import addFriendsImg from '@/public/friends-btn.png';
 import qrImg from '@/public/qr.png';
+import demoChatImg from '@/public/demo-chat.png';
+import colorfulSheetImg from '@/public/colorful-sheet.png';
 
 import { Feature } from '@/components/Feature';
 import { Layout } from '@/components/Layout';
@@ -50,39 +51,56 @@ const Home: NextPage = () => {
 
       <Feature />
 
-      <div className='relative w-full h-96 md:h-[600px] '>
-        <Image
-          src={sheetsImg}
-          alt='カラフルな画像が生成されます'
-          layout='fill'
-          objectFit='cover'
-          quality={100}
-          className='opacity-60'
-        />
-        <div className='absolute flex items-center justify-center w-full h-full'>
-          <div className='w-2/3 max-w-2xl py-8 space-y-6 bg-white border-2 shadow-lg border-slate-100 rounded-2xl md:py-12'>
-            <div className='flex justify-center w-full '>
-              <Image src={logoImg} alt='MiZ' width={150} height={60} />
+      <div className='container px-5 py-12 mx-auto mb-12 lg:max-w-screen-lg'>
+        <div className='grid gap-20 md:grid-cols-2'>
+          <div className='relative space-y-4'>
+            <h3 className='text-3xl font-bold before:w-12 before:h-1.5 before:bg-sky-400 before:absolute before:rounded-lg before:-top-6'>
+              LINEでタイムを送信
+            </h3>
+            <p className='text-gray-600'>
+              面倒なコロンやピリオドの入力を省略してタイムを送信します。種目も俗称で素早く入力できます。
+            </p>
+            <div className='overflow-hidden rounded-lg shadow-lg  aspect-[9/8]'>
+              <Image src={demoChatImg} alt='チャットで送信' />
             </div>
-            <div className='text-lg font-black text-center text-slate-800'>
-              水泳レース画像化 & <br className='block md:hidden' />
-              データ管理サービス
+          </div>
+          <div className='relative space-y-4'>
+            <h3 className='text-3xl font-bold before:w-12 before:h-1.5 before:bg-sky-400 before:absolute before:rounded-lg before:-top-6'>
+              ユニークな画像を生成
+            </h3>
+            <p className='text-gray-600'>
+              25mから2000mまでの全種目に対応しています。種目に応じてシートのテーマカラーが変わります。
+            </p>
+            <div className='overflow-hidden rounded-lg shadow-lg aspect-[9/8]'>
+              <Image src={colorfulSheetImg} alt='カラフルなシートを生成' />
             </div>
-            <a
-              href='https://lin.ee/YR8jgpg'
-              className='flex justify-center w-full'
-            >
-              <Image
-                src={addFriendsImg}
-                alt='友だち追加'
-                height={36}
-                width={116}
-                quality={100}
-              />
-            </a>
-            <div className='justify-center hidden w-full md:flex'>
-              <Image src={qrImg} alt='QRコード' width={150} height={150} />
-            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='p-8 bg-slate-100'>
+        <div className='flex flex-col justify-center max-w-sm gap-4 py-8 mx-auto bg-white border-2 border-gray-200 rounded-xl'>
+          <div className='flex justify-center w-full '>
+            <Image src={logoImg} alt='MiZ' width={150} height={60} />
+          </div>
+          <div className='text-lg font-black text-center text-gray-7bg-gray-700'>
+            水泳レース画像化 & <br className='block md:hidden' />
+            データ管理サービス
+          </div>
+          <a
+            href='https://lin.ee/YR8jgpg'
+            className='flex justify-center w-full'
+          >
+            <Image
+              src={addFriendsImg}
+              alt='友だち追加'
+              height={36}
+              width={116}
+              quality={100}
+            />
+          </a>
+          <div className='justify-center hidden w-full md:flex'>
+            <Image src={qrImg} alt='QRコード' width={100} height={100} />
           </div>
         </div>
       </div>

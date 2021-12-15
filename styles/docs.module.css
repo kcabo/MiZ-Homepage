@@ -3,7 +3,7 @@
 }
 
 .article h1 {
-  @apply py-8 text-4xl font-bold text-gray-500;
+  @apply py-8 text-3xl font-bold text-gray-500;
 }
 
 .article h2 {

@@ -55,7 +55,7 @@ export function Feature() {
             もちろん無料です。好きなときに気軽に使えます。
           </FeatureItem>
           <FeatureItem Icon={Flashy} caption='登録不要'>
-            メアドやパスワードは不要です。LINEで友達になるだけで始められます。
+            メアドやパスワードは不要です。LINEで友だちになるだけで始められます。
           </FeatureItem>
           <FeatureItem Icon={ShieldTick} caption='安心のセキュリティ'>
             データがしっかり保護されるよう、セキュリティを第一に設計してあります。

@@ -14,8 +14,13 @@
   @apply py-2;
 }
 
+.article ol,
+.article ul {
+  @apply list-inside marker:text-sky-500 marker:font-bold;
+}
+
 .article ol {
-  @apply list-decimal list-inside;
+  @apply list-decimal;
 }
 
 .article li li {
@@ -23,7 +28,7 @@
 }
 
 .article ul {
-  @apply list-disc list-inside;
+  @apply list-disc;
 }
 
 .article a {

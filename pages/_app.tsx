@@ -9,13 +9,16 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta
           name='description'
-          content='レース結果を一瞬で画像化するサービスです。ラップ計算ももちろん自動で'
+          content='水泳のレース結果を画像化する無料サービス。ラップ計算ももちろん自動で。'
         />
         <meta
           property='og:description'
-          content='レース結果を一瞬で画像化するサービス'
+          content='水泳のレース結果を画像化する無料サービス。ラップ計算ももちろん自動で。'
         />
-        <meta property='og:image' content={`${url}/ogp.webp`} />
+        <meta
+          property='og:image'
+          content='https://d9it8rcta7jk.cloudfront.net/ads/OGP.png'
+        />
         <meta property='og:type' content='website' />
         <meta property='og:url' content={url} />
         <meta name='viewport' content='width=device-width, initial-scale=1' />

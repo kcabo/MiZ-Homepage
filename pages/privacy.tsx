@@ -21,7 +21,7 @@ const Home: NextPage<{ html: string }> = ({ html }) => {
         <title>プライバシーポリシー | MiZ</title>
         <meta property='og:title' content='プライバシーポリシー | MiZ' />
       </Head>
-      <div className='container px-2 mx-auto space-y-2 sm:px-8'>
+      <div className='container px-4 mx-auto space-y-2 sm:px-8'>
         <LinkButton path='/rules' caption='サービス利用のルール' />
         <LinkButton path='/terms' caption='利用規約' />
         <div

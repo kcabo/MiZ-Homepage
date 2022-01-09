@@ -4,8 +4,6 @@ import Image from 'next/image';
 
 import mockImg from '@/public/mock.png';
 import logoImg from '@/public/miz-logo-landscape.svg';
-import addFriendsImg from '@/public/friends-btn.png';
-import qrImg from '@/public/qr.png';
 import demoChatImg from '@/public/demo-chat.png';
 import colorfulSheetImg from '@/public/colorful-sheet.png';
 
@@ -33,7 +31,7 @@ const Home: NextPage = () => {
           </div>
           <div className='flex items-center'>
             <a
-              href='https://lin.ee/YR8jgpg'
+              href='https://lin.ee/Q5d78ed'
               className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-lg bg-sky-500 hover:bg-sky-700'
             >
               LINEで今すぐはじめる
@@ -88,19 +86,23 @@ const Home: NextPage = () => {
             データ管理サービス
           </div>
           <a
-            href='https://lin.ee/YR8jgpg'
+            href='https://lin.ee/3HTxUXs'
             className='flex justify-center w-full'
           >
-            <Image
-              src={addFriendsImg}
+            <img
+              src='https://scdn.line-apps.com/n/line_add_friends/btn/ja.png'
               alt='友だち追加'
-              height={36}
-              width={116}
-              quality={100}
+              height='36'
+              border='0'
             />
           </a>
           <div className='justify-center hidden w-full md:flex'>
-            <Image src={qrImg} alt='QRコード' width={100} height={100} />
+            <img
+              src='https://qr-official.line.me/sid/M/589etzcu.png?appendQueryParameter=oat__id%3D38821'
+              alt='QRコード'
+              width={100}
+              height={100}
+            />
           </div>
         </div>
       </div>

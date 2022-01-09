@@ -35,7 +35,7 @@ export function Header() {
 
         <div className='ml-5 '>
           <a
-            href='https://lin.ee/YR8jgpg'
+            href='https://lin.ee/LV3cuXP'
             className='px-4 py-2.5 text-base font-medium leading-6 text-white whitespace-no-wrap rounded hover:shadow bg-sky-500 hover:shadow-sky-500/50'
           >
             友だち追加

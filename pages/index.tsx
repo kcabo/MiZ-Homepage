@@ -87,12 +87,11 @@ const Home: NextPage = () => {
           </div>
           <a
             href='https://lin.ee/3HTxUXs'
-            className='flex justify-center w-full'
+            className='w-32 mx-auto'
           >
             <img
               src='https://scdn.line-apps.com/n/line_add_friends/btn/ja.png'
               alt='友だち追加'
-              height={36}
             />
           </a>
           <div className='justify-center hidden w-full md:flex'>

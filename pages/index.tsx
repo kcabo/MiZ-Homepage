@@ -92,8 +92,7 @@ const Home: NextPage = () => {
             <img
               src='https://scdn.line-apps.com/n/line_add_friends/btn/ja.png'
               alt='友だち追加'
-              height='36'
-              border='0'
+              height={36}
             />
           </a>
           <div className='justify-center hidden w-full md:flex'>

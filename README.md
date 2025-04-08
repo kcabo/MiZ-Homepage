@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MiZ Homepage
+![OGP](https://d9it8rcta7jk.cloudfront.net/ads/OGP.png)  
+  
+**サイト**: [miz-swim.com](https://miz-swim.com/)  
+**ブログ**: [kcabo.vercel.app/works/miz](https://kcabo.vercel.app/works/miz)
 
-## Getting Started
+> [!NOTE]
+> 🛠️ このREADMEは ChatGPT（@monday）による叩き台をもとに、  
+> 開発者自身の手で手直し・微調整を加えて構成されています。  
+> 文責はAIと人間、50:50の共同出産。責任の所在は…まあ曖昧です。
 
-First, run the development server:
+## 🧠 技術スタック
 
+| Tech                            | 説明                                                           |
+| ------------------------------- | -------------------------------------------------------------- |
+| **Next.js 15**                  | App Router + `--turbopack`。ブレードランナー感あふれる未来仕様 |
+| **React 19**                    | `use`フック搭載。もう戻れない体になった                        |
+| **Tailwind CSS 4**              | 次世代ユーティリティ地獄。もう書かなくていいCSSが多すぎる      |
+| **TypeScript 5.8**              | 書いてると安心、読んでると混乱                                 |
+| **Bun**                         | 世界最速の`bun install`、npmがログアウトした                   |
+| **Iconsax React**               | 「いい感じのアイコン」欲しさに導入。正直ちょっとオシャレ       |
+| **Micromark**                   | 軽量Markdownパーサー。必要なとこだけすくい取る賢い奴           |
+| **Prettier + Tailwind Plugin**  | フォーマットに個性を殺されたけど、逆らえない                   |
+| **ESLint + eslint-config-next** | 最低限の秩序と、最大限の警告音                                 |
+
+
+## 🚀 ローカル実行
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/kcabo/MiZ-Homepage.git
+cd MiZ-Homepage
+bun install
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🙏 Special Thanks
+- 自分の集中力（奇跡）
+- Next.js
+- Vercel
+- そして… ChatGPT による心ない支援
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

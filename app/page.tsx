@@ -30,7 +30,7 @@ export default async function Page() {
             </a>
           </div>
         </div>
-        <div className='mx-auto -mb-1.5 sm:container lg:mx-10 lg:w-80 xl:mr-24'>
+        <div className='mx-auto sm:container lg:mx-10 lg:w-80 xl:mr-24'>
           <Image src={mockImg} className='object-cover object-bottom' alt='200m自由形' />
         </div>
       </div>

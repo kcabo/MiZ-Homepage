@@ -15,6 +15,12 @@ export function Header() {
             <Link href='/about' className='leading-6 font-medium text-gray-600 hover:text-gray-900'>
               運営者情報
             </Link>
+            <a
+              href='https://forms.gle/Sjsh5k1CUo8ziyA29'
+              className='leading-6 font-medium text-gray-600 hover:text-gray-900'
+            >
+              お問い合わせ
+            </a>
             <Link href='/terms' className='leading-6 font-medium text-gray-600 hover:text-gray-900'>
               利用規約
             </Link>
